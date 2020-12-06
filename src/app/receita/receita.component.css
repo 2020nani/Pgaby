@@ -1,0 +1,16 @@
+.cont{
+    background-color:lightslategray;
+    width: 94vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

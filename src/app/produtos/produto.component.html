@@ -1,0 +1,46 @@
+<div class="cont">
+    <div class="prod">
+        
+        <mat-card *ngFor="let bolo of Bolo" class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{ bolo.name }}</mat-card-title>
+              <mat-card-subtitle>{{ bolo.sabor }}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image class="img" [src]="bolo.imageUrl" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{ bolo.description}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+    </div>
+    <div class="prod">
+      <mat-card *ngFor="let salgado of Salgado" class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ salgado.name }}</mat-card-title>
+          <mat-card-subtitle>{{ salgado.sabor }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img" [src]="salgado.imageUrl" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{ salgado.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="prod">
+      <mat-card *ngFor="let doce of Doce" class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ doce.name }}</mat-card-title>
+          <mat-card-subtitle>{{ doce.sabor }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img" [src]="doce.imageUrl" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{ doce.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    
+</div>

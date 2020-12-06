@@ -1,0 +1,33 @@
+<div class="main">
+
+  <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="submit()" (ngReset)="reiniciarForm()">
+    <div>
+      <input placeholder="Entre com seu nome" name="nome" formControlName='nome'>
+    </div>
+    <div>
+      <input placeholder="Entre com seu telefone com ddd" name="telefone" formControlName='telefone'>
+    </div>
+    <div >
+      
+      <select  name="tipoEncomenda" formControlName='tipoEncomenda'>
+        <option  value="">Tipo encomenda</option>
+        <option *ngFor="let opcao of opcoes" value=" opcao"> {{ opcao }}</option>
+      </select>
+     
+    </div>
+    <div>
+      <textarea placeholder="Especifique seu pedido(sabor, recheio)" name="descricao"
+        formControlName='descricao'></textarea>
+    </div>
+    <div>
+      <input placeholder="Quantia minimo 1 kg e maximo 10kg" type="number" name="quantidade" step="1"
+        formControlName='quantidade'>
+    </div>
+
+    <div class="btn">
+      <button type="submit" color="accent" mat-raised-button>Salvar</button>
+      <button type="reset" color="warn" mat-raised-button>Cancelar</button>
+    </div>
+  </form>
+
+</div>

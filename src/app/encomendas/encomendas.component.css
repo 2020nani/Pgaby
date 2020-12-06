@@ -1,0 +1,93 @@
+.main{
+  background-color:lightslategray;
+  width: 94vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  padding-bottom: 1vh; 
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4vh;
+  
+}
+
+input{
+  margin-top: 2vh;
+  width: 60vw;
+  height: 6vh;
+  font-size: 1.3rem;
+  padding-left: 1vw ;
+}
+textarea{
+    margin-top: 2vh;
+    width: 60vw;
+    height: 6vh;
+    font-size: 1.3rem;
+    padding-left: 1vw ;
+}
+select{
+  font: 1.3rem sans-serif;
+  color: black;
+  margin-top: 2vh;
+  width: 60vw;
+  height: 6vh; 
+  padding-left: 1vw ;
+  
+}
+option{
+  font-size: 1.3rem;
+}
+
+button{
+  width: 10vw;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+p{
+font-size: 1.5rem;
+
+}
+h1{
+  font-size: 2rem;
+}
+@media screen and (max-width:700px){
+  
+  .btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4vh;
+    
+  }
+  
+  input{
+    width: 90vw;
+  }
+  textarea{
+    width: 90vw;
+  }
+  select{
+    width: 90vw;  
+  }
+  option{
+    font-size: 1.3rem;
+  }
+  
+  button{
+    width: 20vw;
+  }
+ 
+  
+}
